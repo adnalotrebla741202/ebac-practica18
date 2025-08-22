@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        
+    </style>
+
+    <title>Práctica 18</title>
+
+</head>
+<body>
+
+    <script>
+
+        /* 
+            1.Ejercicio de Variable Global.
+              Crea una variable global llamada globalVar y asígnale cualquier valor. Luego, 
+              imprime esta variable en la consola con el texto "Variable Global".
+        */
+
+        // Declarar una variable global
+        var globalVar = "Este es un valor de variable global.";
+
+        console.log("1.Ejercicio de Variable Global.");
+        console.log("\n");
+        // Imprimir la variable en la consola
+        console.log("Variable Global:", globalVar);
+        console.log("\n\n\n\n\n");
+
+
+
+
+
+        /* 
+            2.Ejercicio de Variable de Bloque.
+              Crea una variable dentro de un bloque de código y asígnale un valor. Luego, 
+              imprime esta variable en la consola con el texto "Variable de Bloque".
+        */
+
+        {
+            let blockVar = "Valor dentro del bloque.";
+            console.log("2.Ejercicio de Variable de Bloque.");
+            console.log("\n");
+            console.log("Variable de Bloque:", blockVar);
+            console.log("\n\n\n\n\n");
+        }
+
+
+
+
+
+        /* 
+            3.Ejercicio de Modificación de Variable Global.
+              Declara una variable global llamada globalVar y asígnale un valor. Luego, 
+              modifica el valor de esta variable dentro de una función y muestra el valor 
+              actualizado en la consola.
+        */
+
+        // Declarar una variable global
+        let globalVarExercise3 = "Valor inicial.";
+
+        const modifyVariable = () => 
+        {
+            // Modificar el valor de la variable global
+            globalVarExercise3 = "Valor modificado.";
+        }
+
+        console.log("3.Ejercicio de Modificación de Variable Global.");
+        console.log("\n");
+        // Mostrar el valor antes de la modificación
+        console.log("Antes de la modificación:", globalVarExercise3);
+
+        // Llamar a la función para modificar la variable
+        modifyVariable();
+
+        // Mostrar el valor después de la modificación
+        console.log("Después de la modificación:", globalVarExercise3);
+        console.log("\n\n\n\n\n");
+
+
+
+
+
+        /* 
+            4.Ejercicio de Variable de Bloque Anidado.
+              Crea una variable dentro de un bloque de código anidado y muestra su valor en la 
+              consola.
+        */
+
+        const nestedBlockVar = () =>
+        {
+            let functionInternalValue = 'Soy una variable interna dentro de una "función".';
+
+            if (true) 
+            {
+                let ifInternalValue = 'Soy una variable interna dentro de un "if".';
+                console.log(ifInternalValue);
+            }
+
+            console.log(functionInternalValue);
+        }
+
+        console.log("4.Ejercicio de Variable de Bloque Anidado.");
+        console.log("\n");
+        nestedBlockVar();
+        console.log("\n\n\n\n\n");
+
+
+
+
+        /* 
+            5.Ejercicio de Scope de Función.
+              Declara una variable dentro de una función y luego intenta acceder a ella desde 
+              fuera de la función. Observa el resultado en la consola.
+        */
+
+        const functionScope = () => 
+        {
+            var functionScopeVar = "Hola, mundo!.";
+            // Mostrando contenido de la variable en consola.
+            console.log(functionScopeVar); 
+        }
+
+        console.log("5.Ejercicio de Scope de Función.");
+        console.log("\n");
+        functionScope();
+        // Esto generará un error: Uncaught ReferenceError: miVariable is not defined.
+        // console.log(functionScopeVar);
+        /* La línea anterior se comenta dado que el error generado no permite seguir con la
+           demostración del siguiente ejercicio. */
+        console.log("\n\n\n\n\n");
+
+
+
+
+
+        /* 
+            6.Ejercicio de Reasignación de Variable Global.
+              Declara una variable global y otra local con el mismo nombre dentro de una 
+              función. Intenta acceder a la variable global dentro de la función y observa el 
+              resultado.
+        */
+
+        // Declaración de una variable global
+        let globalVarReassignment = "Soy global.";
+
+        const varReassignment = () =>
+        {
+            // Declaración de una variable local con el mismo nombre
+            let globalVarReassignment = "Soy local.";
+    
+            // Accediendo a la variable local
+            console.log(globalVarReassignment); // Imprime: "Soy local."
+        }
+
+        console.log("6.Ejercicio de Reasignación de Variable Global.");
+        console.log("\n");
+        varReassignment();
+
+        // Accediendo a la variable global
+        console.log(globalVarReassignment); // Imprime: "Soy global."
+
+    </script>
+
+</body>
+</html>
