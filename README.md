@@ -25,7 +25,7 @@ Este proyecto es una práctica de programación orientada al manejo de variables
   <li>Buscamos el icono con los 3 puntos en forma vertical el cual se encuentra a la derecha de un icono con forma de engrane; este icono es para seleccionar la manera en la que queremos ver la distribución de las ventanas. Se recomienda usar la opción que tiene el recuadro grande arriba y un rectángulo en la parte de abajo.
   <li>En la barra de opciones buscamos el menú <b>Consola</b>.</li>
   <li>Se recomienda maximizar lo más posible el área de la consola para tener una mejor visualización de los resultados de los ejercicios.</li>
-  <li>Podemos usar el scroll del ratón y/o la barra de desplazamiento vertical para poder ver cada uno de los diez ejercicios que conforman el proyecto.</li>
+  <li>Podemos usar el scroll del ratón y/o la barra de desplazamiento vertical para poder ver cada uno de los seis ejercicios que conforman el proyecto.</li>
   <li>En la consola del navegador, verás los resultados de cada uno de los ejercicios (del 1 al 6), mostrando información como:</li>
   <ul>
     <li><b>Variable Global.</b> Crea una variable global llamada globalVar y se le asigna cualquier valor. Luego, se imprime esta variable en la consola con el texto <em>Variable Global</em>.</li>
